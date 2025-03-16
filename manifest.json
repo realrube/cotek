@@ -1,0 +1,9 @@
+{
+  "domain": "cotek",
+  "name": "Cotek",
+  "version": "1.0",
+  "documentation": "https://www.example.com",
+  "dependencies": [],
+  "codeowners": ["@your_github_username"],
+  "requirements": ["pyserial-asyncio"]
+}

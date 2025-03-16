@@ -1,0 +1,10 @@
+# services.yaml
+
+set_switch:
+  name: Set Switch State
+  description: "Set the state of the inverter power switch."
+  fields:
+    state:
+      description: "The desired state of the switch (on/off)."
+      example: "on"
+
