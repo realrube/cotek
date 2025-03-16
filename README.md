@@ -23,9 +23,9 @@ along with cotek. If not, see <https://www.gnu.org/licenses/>.
 
 ## Connecting hardware:
 
-Use an RS-232 port, in my case I used a generic USB to Serial adapter having an FTDI chip.
+Requires a standard RS-232 port, in my case I used a generic USB to Serial adapter having an FTDI chip.
 
-The port for the standard remote is a 6-pin RJ-11 jack, but you may use a 4-pin jack (standard analog phone cord) taking note of the pin numbers.  Communications take place at 4800 baud N81.  The Go-Power port is labeled "REMOTE" whereas the Cotek is labeled "RS-232 REMOTE".
+The port for the standard remote is a 6-pin RJ-11 jack, but you may use a 4-pin jack (standard analog phone cord) *taking note the pin numbers vary*.  Communications always takes place at 4800 baud, N81.  The Go-Power port is labeled "REMOTE" whereas the Cotek is labeled "RS-232 REMOTE".
 
     RJ11-6  RJ11-4  DB-9  Signal (Computer Side)
 
@@ -59,7 +59,7 @@ You can now add the various sensors to your dashboard.  The entities will be sho
 
 In order to control the inverter and charger using this code, add a binary_sensors to your dashboard that shows the state of the inverter power and inverter (binary_sensor.inverter_state and binary_sensor.charger_state).  Then, add Interactions to the sensors cotek: toggle_inverter and cotek: toggle_charger respectively.
 
-## Commands Sniffed
+## Commands Sniffed:
 
 In anyone is interested, this was what I found.  I compared them to what I could find in the menus.  I later found a Cotek manual and some were confirmed, but not all were in the manual.  The ones I wasn't sure about "?", I did not implement.
 
