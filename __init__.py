@@ -23,9 +23,9 @@ from homeassistant.const import STATE_UNAVAILABLE, STATE_ON, STATE_OFF
 
 SERIAL_PORT = '/dev/serial/by-id/usb-FTDI_US232B_FTBTMP72-if00-port0'
 BAUD_RATE = 4800
-LOOP_INTERVAL = 10  # seconds
-TIMEOUT = 1  # seconds
-RECONNECT_INTERVAL = 10  # seconds
+LOOP_INTERVAL = 1  # seconds between polling
+TIMEOUT = 1  # seconds to expect response
+RECONNECT_INTERVAL = 10  # seconds to delay before reconnect
 
 SENSOR_COMMANDS = {
     "Inverter_Frequency": "FRQ?",
