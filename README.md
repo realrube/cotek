@@ -72,7 +72,7 @@ Restart Home Assistant.
 
 You can now add the various sensors to your dashboard.  The entities will be shown as sensor.inverter_grid_voltage for example.
 
-In order to control the inverter and charger using this code, add a binary_sensors to your dashboard that shows the state of the inverter power and inverter (binary_sensor.inverter_state and binary_sensor.charger_state).  Then, add Interactions to the sensors cotek: toggle_inverter and cotek: toggle_charger respectively.
+In order to control the inverter and charger using this code, add a binary_sensors to your dashboard that shows the state of the inverter power and inverter (binary_sensor.inverter_state and binary_sensor.charger_state).  Then, add Interactions to the sensors cotek: toggle_inverter and cotek: toggle_charger respectively.  You can now click on the binary sensor and it will toggle!  It's a bit of a workaround because implementing a switch is a bit more complex and I found it too frustrating.
 
 ## Commands Sniffed:
 
