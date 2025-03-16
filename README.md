@@ -45,7 +45,7 @@ It's recommended to install Advanced SSH & Web Terminal and File editor Add-Ons 
 
 Edit \_\_init__.py to suit your com port.  This was quick a quick proof of concept.  Maybe will clean up one day and use HA's built-in configuration mechanisms.
 
-There are dependences that Python requires, and since using the Home Assistant OS, updates have to be made inside the Home Assistant container to persist after a reboot.  This worked for me:
+There are Python modules required required for this code that are not included by default, and since using the Home Assistant OS, updates have to be made inside the Home Assistant container to persist after a reboot.  This worked for me:
 
     docker exec -it $(docker ps -f name=homeassistant -q) /bin/sh
     pip install bleak configparser requests
