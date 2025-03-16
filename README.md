@@ -1,6 +1,6 @@
 # cotek
 
-This **cotek** project is a custom component for Home Assistant allowing sensors to be collected via an RS-232 interface to certain Cotek SC Series (possibly other) inverters also Dometic Go-Power IC-Series inverter/chargers.  After some online sleuthing, it seems that Cotek may have produced produced the Go-Power hardware for Dometic?  The protocol was determined by sniffing the data between the Go-Power device and its display unit.  It was later found that the Cotek SC manual contained some (but not all) of these commands.  It was developed and tested on a Raspberry Pi 4B 4GB running the Home Assistant OS (6.6.62-haos-raspi).
+This **cotek** project is a custom component for Home Assistant allowing sensors to be collected via an RS-232 interface to certain Cotek SL/SC Series inverters (possibly other models) and Dometic Go-Power IC-Series inverter/chargers.  After some online sleuthing, it seems that Cotek may have produced produced the Go-Power hardware for Dometic?  The protocol was originally determined by sniffing the data between a Go-Power IC-3000 device and its display unit.  It was later found that the Cotek SC manual contained some (but not all) of these commands, so that's why it's being called the cotek protocol.  It was developed and tested on a Raspberry Pi 4B 4GB running the Home Assistant OS (6.6.62-haos-raspi).
 
 
     This file is part of https://github.com/realrube/cotek.
@@ -70,13 +70,13 @@ Edit Home Assistant's configuration file configuration.yaml to recognize the cus
 
 Restart Home Assistant.
 
-You can now add the various sensors to your dashboard.  The entities will be shown as sensor.inverter_grid_voltage for example.
+Now add the various sensors to your dashboard.  The entities will be shown as sensor.inverter_grid_voltage for example.
 
-In order to control the inverter and charger using this code, add a binary_sensors to your dashboard that shows the state of the inverter power and inverter (binary_sensor.inverter_state and binary_sensor.charger_state).  Then, add Interactions to the sensors cotek: toggle_inverter and cotek: toggle_charger respectively.  You can now click on the binary sensor and it will toggle!  It's a bit of a workaround because implementing a switch is a bit more complex and I found it too frustrating.
+In order to control the inverter and charger using this code, add a binary_sensors to your dashboard that shows the state of the inverter power and inverter (binary_sensor.inverter_state and binary_sensor.charger_state).  Then, add Interactions to the sensors cotek: toggle_inverter and cotek: toggle_charger respectively.  You can now click on the binary sensor and it will toggle!  It's a bit of a workaround because implementing a switch is a bit more complex and too frustrating.
 
 ## Commands Sniffed:
 
-In anyone is interested, this was what I found.  I compared them to what I could find in the menus.  I later found a Cotek manual and some were confirmed, but not all were in the manual.  The ones I wasn't sure about "?", I did not implement.
+In case of interest, this was what was found by sniffing the RS-232 line and observing the commands issued by the control panel.  They were compared them to what was fouunbd in the control panel menus.  There is a [Cotek SD Series manual](https://www.cotek.com.tw/pdf/156396/UM_SD%20series_221128_EN%2BFR.pdf) online that shared some of the commands and it helped to confirm, but not all the commands were in the manual.  The ones which couldn't be confirmed have a function marked "?" and were not implemented.
 
 | Command           | Function                        |
 | ----------------- | ------------------------------- |
