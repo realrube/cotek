@@ -2,24 +2,22 @@
 
 This **cotek** project is a custom component for Home Assistant allowing sensors to be collected via Bluetooth BLE using an RS-232 interface to certain Cotek SC Series (possibly other) inverters also Dometic Go-Power IC-Series inverter/chargers.  I'm assuming that Cotek produced the hardware for Dometic?  The protocol was determined by sniffing the data between the Go-Power device and its display unit.  It was later found that the Cotek SC manual contained some (but not all) of these commands.  It was developed and tested on a Raspberry Pi 4B 4GB running the Home Assistant OS (6.6.62-haos-raspi).
 
-"""
 
-This file is part of https://github.com/realrube/cotek.
+    This file is part of https://github.com/realrube/cotek.
+    
+    cotek is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
-cotek is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
+    cotek is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+    GNU General Public License for more details.
 
-cotek is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
-GNU General Public License for more details.
+    You should have received a copy of the GNU General Public License
+    along with cotek. If not, see <https://www.gnu.org/licenses/>.
 
-You should have received a copy of the GNU General Public License
-along with cotek. If not, see <https://www.gnu.org/licenses/>.
-
-"""
 
 ## Connecting hardware:
 
