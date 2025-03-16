@@ -2,6 +2,7 @@
 This cotek project is a custom component for Home Assistant allowing sensors to be collected via Bluetooth BLE using an RS-232 interface to a Cotek inverter also Go-Power.  It was developed and tested on a Raspberry Pi 4B 4GB running the Home Assistant OS (6.6.62-haos-raspi).
 
 """
+
 This file is part of https://github.com/realrube/cotek.
 
 cotek is free software: you can redistribute it and/or modify
@@ -16,6 +17,7 @@ GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
 along with cotek. If not, see <https://www.gnu.org/licenses/>.
+
 """
 
 
@@ -39,6 +41,8 @@ Edit Home Assistant's configuration file configuration.yaml to recognize the cus
 
 Restart Home Assistant.
 
-You can now add the sensors to your dashboard.
+You can now add the various sensors to your dashboard.  The entities will be shown as sensor.inverter_grid_voltage for example.
+
+In order to control the inverter and charger using this code, add a binary_sensors to your dashboard that shows the state of the inverter power and inverter (binary_sensor.inverter_state and binary_sensor.charger_state).  Then, add Interactions to the sensors cotek: toggle_inverter and cotek: toggle_charger respectively.
 
 Enjoy!
