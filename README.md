@@ -111,3 +111,6 @@ In case of interest, this was what was found by sniffing the RS-232 line and obs
 | *RST              | Factory reset
 
 ## Enjoy!
+
+## Disclaimer
+This is not an official library endorsed by the device manufacturer. Cotek, Dometic, Go-Power and all other trademarks in this repo are the property of their respective owners and their use herein does not imply any sponsorship or endorsement.
