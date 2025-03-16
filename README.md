@@ -1,5 +1,5 @@
 
-This cotek project is a custom component for Home Assistant allowing sensors to be collected via Bluetooth BLE using an RS-232 interface to a Cotek inverter also Go-Power.  It was developed and tested on a Raspberry Pi 4B 4GB running the Home Assistant OS (6.6.62-haos-raspi).
+This cotek project is a custom component for Home Assistant allowing sensors to be collected via Bluetooth BLE using an RS-232 interface to certain Cotek SC Series (possible other) inverters also Dometic Go-Power IC-Series inverter/chargers.  The protocol was determined by sniffing the data between the Go-Power device and its display unit.  It was later found that the Cotek SC manual contained some (but not all) of these commands.  It was developed and tested on a Raspberry Pi 4B 4GB running the Home Assistant OS (6.6.62-haos-raspi).
 
 """
 
@@ -20,6 +20,19 @@ along with cotek. If not, see <https://www.gnu.org/licenses/>.
 
 """
 
+Connecting hardware:
+
+Use an RS-232 port, in my case I used a generic USB to Serial adapter having an FTDI chip.
+
+The port for the standard remote is a 6-pin RJ-11 jack, but you may use a 4-pin jack (standard analog phone cord) taking note of the pin numbers.  Communications take place at 4800 baud N81.  The Go-Power port is labeled "REMOTE" whereas the Cotek is labeled "RS-232 REMOTE".
+
+RJ11-6  RJ11-4  DB-9  Signal (Computer Side)
+
+2       1       5     GND
+3       2       3     TXD
+4       3       2     RXD
+
+Consult the web to find out how to identify the standard pinout 
 
 Instructions:
 
