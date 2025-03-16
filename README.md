@@ -33,12 +33,14 @@ The port for the standard remote is a 6-pin RJ-11 jack, but you may use a 4-pin 
     3       2       3     TXD
     4       3       2     RXD
 
-Consult the web to find out how to identify the standard pinout 
+Consult the web to find out how to identify the standard RJ-11 pinout. 
 
 ## Instructions:
 
 Place all code into a new directory "cotek" within Home Assistant's structure:  
-/root/homeassistant/custom_components/cotek
+
+    /root/homeassistant/custom_components/cotek
+    
 It's recommended to install Advanced SSH & Web Terminal and File editor Add-Ons in order to manipulate the code.
 
 Edit __init__.py to suit your com port.  This was quick a quick proof of concept.  Maybe will clean up one day and use HA's built-in configuration mechanisms.
