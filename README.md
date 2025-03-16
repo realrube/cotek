@@ -43,7 +43,7 @@ Place all code into a new directory "cotek" within Home Assistant's structure:
     
 It's recommended to install Advanced SSH & Web Terminal and File editor Add-Ons in order to manipulate the code.
 
-Edit \__init__.py to suit your com port.  This was quick a quick proof of concept.  Maybe will clean up one day and use HA's built-in configuration mechanisms.
+Edit \_\_init__.py to suit your com port.  This was quick a quick proof of concept.  Maybe will clean up one day and use HA's built-in configuration mechanisms.
 
 There are dependences that Python requires, and since using the Home Assistant OS, updates have to be made inside the Home Assistant container to persist after a reboot.  This worked for me:
 
