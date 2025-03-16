@@ -1,6 +1,6 @@
 # cotek
 
-This **cotek** project is a custom component for Home Assistant allowing sensors to be collected via an RS-232 interface to certain Cotek SL/SC Series inverters (possibly other models) and Dometic Go-Power IC-Series inverter/chargers.  After some online sleuthing, it seems that Cotek may have produced produced the Go-Power hardware for Dometic?  The protocol was originally determined by sniffing the data between a Go-Power IC-3000 device and its display unit.  It was later found that the Cotek SC manual contained some (but not all) of these commands, so that's why it's being called the cotek protocol.  It was developed and tested on a Raspberry Pi 4B 4GB running the Home Assistant OS (6.6.62-haos-raspi).
+This **cotek** project is a custom component for Home Assistant allowing sensors to be collected via an RS-232 interface to certain Cotek SL/SC Series inverters (possibly other models) and also Dometic Go-Power IC-Series inverter/chargers.  After some online sleuthing, it seems that Cotek may have produced produced the Go-Power hardware for Dometic?  The protocol was originally determined by sniffing the data between a Go-Power IC-3000 device and its display unit.  It was later found that the Cotek SC manual contained some (but not all) of these commands, so that's why it's being called the cotek protocol.  It was developed and tested on a Raspberry Pi 4B 4GB running the Home Assistant OS (6.6.62-haos-raspi).
 
 
     This file is part of https://github.com/realrube/cotek.
