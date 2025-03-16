@@ -33,7 +33,22 @@ The port for the standard remote is a 6-pin RJ-11 jack, but you may use a 4-pin 
 | 3      | 2      | 3    | TXD
 | 4      | 3      | 2    | RXD
 
-Consult the web to find out how to identify the standard RJ-11 pinout. 
+
+Consult the web to confirm the standard RJ-11 pin arrangement.  
+If you're looing at the contacts, tab away from you, cable down, pin 1 is on the left.
+
+      1         6
+     _____________
+    | | | | | | | |
+    | | | | | | | |
+    |             |
+    |  _________  |
+    |             |
+    |             |
+    |             |
+    | ___________ |
+          | |
+          | |
 
 ## Instructions:
 
