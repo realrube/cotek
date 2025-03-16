@@ -21,6 +21,7 @@ from datetime import datetime
 from homeassistant.helpers import discovery
 from homeassistant.const import STATE_UNAVAILABLE, STATE_ON, STATE_OFF
 
+# Find your serial port by-ID to guarantee the correct device, or replace with a direct device such as /dev/ttyUSB0
 SERIAL_PORT = '/dev/serial/by-id/usb-FTDI_US232B_FTBTMP72-if00-port0'
 BAUD_RATE = 4800
 LOOP_INTERVAL = 1  # seconds between polling
