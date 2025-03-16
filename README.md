@@ -26,11 +26,11 @@ Use an RS-232 port, in my case I used a generic USB to Serial adapter having an 
 
 The port for the standard remote is a 6-pin RJ-11 jack, but you may use a 4-pin jack (standard analog phone cord) taking note of the pin numbers.  Communications take place at 4800 baud N81.  The Go-Power port is labeled "REMOTE" whereas the Cotek is labeled "RS-232 REMOTE".
 
-RJ11-6  RJ11-4  DB-9  Signal (Computer Side)
+    RJ11-6  RJ11-4  DB-9  Signal (Computer Side)
 
-2       1       5     GND
-3       2       3     TXD
-4       3       2     RXD
+    2       1       5     GND
+    3       2       3     TXD
+    4       3       2     RXD
 
 Consult the web to find out how to identify the standard pinout 
 
