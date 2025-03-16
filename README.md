@@ -59,4 +59,40 @@ You can now add the various sensors to your dashboard.  The entities will be sho
 
 In order to control the inverter and charger using this code, add a binary_sensors to your dashboard that shows the state of the inverter power and inverter (binary_sensor.inverter_state and binary_sensor.charger_state).  Then, add Interactions to the sensors cotek: toggle_inverter and cotek: toggle_charger respectively.
 
+## Commands Sniffed
+
+In anyone is interested, this was what I found.  I compared them to what I could find in the menus.  I later found a Cotek manual and some were confirmed, but not all were in the manual.  The ones I wasn't sure about "?", I did not implement.
+
+| Command           | Function                        |
+| ----------------- | ------------------------------- |
+| RLYST?            | Relay state?
+| PLLERR?           | PLL Error?
+| CHST?             | Charger state?
+| VINV?             | Inverter voltage
+| IINV?             | Inverter current
+| PINV?             | Output power
+| VGRID?            | Grid voltage
+| IGRID?            | Grid current
+| PGRID?            | Grid power
+| VBAT?             | Battery voltage
+| IBAT?             | Battery current
+| ERR?              | Error?
+| TBAT?             | Battery temperature 
+| TENIR?            | ?
+| TMOS1?            | MOSFET1 temp
+| TMOS2?            | MOSFET2 temp
+| TTR?              | Transformer temp
+| FRQ?              | AC Frequency
+| POWER ?           | Command 0 = Inverter off, 1 = Inverter on, ? = Query
+| CHAOFF ?          | Command 0 = Charger on, 1 =  Charger off, ? = Query
+| EQST?             | Equilization?
+| EQSET?            | Equilization?
+| FUNC <##>         | Select a function code (observed 0-26 and 28)
+| SETT?             | Show the value of the function code
+| SETT <calue>	    | Set a new value for the function code
+| TYPE?             | Battery type?
+| *IDN?             | Version?
+| EXEC 00,5A,C3	    | Saw this periodically, maybe charge level setting?
+| *RST              | Factory reset
+
 ## Enjoy!
