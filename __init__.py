@@ -67,8 +67,6 @@ class SerialService:
     async def connect(self):
         for name, command in SENSOR_COMMANDS.items():
             self.hass.states.async_set(f"sensor.{name.lower()}", STATE_UNAVAILABLE)
-        self.hass.states.async_set("binary_sensor.inverter_state", STATE_OFF)
-        self.hass.states.async_set("binary_sensor.charger_state", STATE_OFF)
         while True:
             try:
                 self.reader, self.writer = await serial_asyncio.open_serial_connection(
